@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResumeGlow AI — Upload & Checkout</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+    <a class="logo" href="index.html">ResumeGlow AI</a>
+    <nav class="nav">
+        <a href="how-it-works.html">How it works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="button ghost">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="section">
+        <span class="badge">Get started</span>
+        <h1>Upload your resume and tell us your goals.</h1>
+        <p>
+            We’ll review your resume, tailor it to your target role, and deliver an edited Google Doc
+            plus a polished file. Secure checkout powered by Stripe.
+        </p>
+    </section>
+
+    <section class="grid-two">
+        <div class="card">
+            <h3>1. Upload resume</h3>
+            <form class="form">
+                <div>
+                    <label for="resume">Resume file (PDF or DOCX)</label>
+                    <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx" />
+                </div>
+                <div>
+                    <label for="role">Target role or program</label>
+                    <input id="role" name="role" type="text" placeholder="Product Manager, MBA, Data Analyst" />
+                </div>
+                <div>
+                    <label for="grade">Grade or GPA (if relevant)</label>
+                    <input id="grade" name="grade" type="text" placeholder="3.8 GPA, First Class Honors" />
+                </div>
+                <div>
+                    <label for="strengths">Top strengths to highlight</label>
+                    <textarea id="strengths" name="strengths" rows="4" placeholder="Leadership, growth experiments, AI research..."></textarea>
+                </div>
+                <button class="button" type="submit">Save questionnaire</button>
+            </form>
+        </div>
+        <div class="card">
+            <h3>2. Checkout</h3>
+            <p>
+                Select your plan and complete checkout via Stripe. You’ll receive an email confirmation
+                and a secure upload link for any additional files.
+            </p>
+            <div class="list">
+                <label>
+                    <input type="radio" name="plan" checked /> Essential — $79
+                </label>
+                <label>
+                    <input type="radio" name="plan" /> Accelerate — $149
+                </label>
+                <label>
+                    <input type="radio" name="plan" /> Executive — $249
+                </label>
+            </div>
+            <button class="button" type="button">Pay with Stripe</button>
+            <p class="note">Stripe checkout is shown as a placeholder in this demo.</p>
+        </div>
+    </section>
+
+    <section class="section grid-two">
+        <div class="card">
+            <h3>3. Delivery</h3>
+            <p>
+                Within 24–48 hours you’ll receive an email with:
+            </p>
+            <ul class="list">
+                <li>Google Doc link with tracked edits</li>
+                <li>Final PDF and DOCX files</li>
+                <li>Change summary + keyword list</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Need to add more context?</h3>
+            <p>
+                After checkout, reply to your confirmation email with any job descriptions, portfolios,
+                or additional achievements to include.
+            </p>
+            <a class="button ghost" href="contact.html">Ask a question</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2024 ResumeGlow AI. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="upload.html">Get started</a>
+        <a href="contact.html">Support</a>
+    </div>
+</footer>
+</body>
+</html>
